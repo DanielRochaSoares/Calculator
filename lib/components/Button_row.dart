@@ -9,8 +9,12 @@ class Buttonrow extends StatelessWidget {
 
   @override
   Widget Build(BuildContext context) {
-    return Row(
-      children: buttons,
+    return expanted(
+      Flex: 1,
+      chlid:Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: buttons,
+      ),
     );
   }
 }
